@@ -1,0 +1,24 @@
+{
+  "name": "bot-template-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "watch:start": "tsc-watch --onSuccess \"node --inspect ./dist/index.js\"",
+    "format": "prettier --config .prettierrc --write \"src/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^14.3.2",
+    "mongoose": "^6.4.6",
+    "rate-limiter-flexible": "^2.3.7",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.6.0"
+  }
+}
