@@ -1,9 +1,6 @@
-import * as dotenv from 'dotenv';
+import { config  as dotenvConfig } from 'dotenv';
 import { ColorResolvable } from 'discord.js';
-import { resolve } from 'path';
-dotenv.config();
-
-//TODO: no need for config folder - remove
+dotenvConfig();
 
 export type BotConfig = {
   token: string;
